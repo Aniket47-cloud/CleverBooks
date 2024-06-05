@@ -1,0 +1,56 @@
+/* Section3.css */
+
+/* Custom scrollbar styles */
+.scrollable-container {
+  height: 400px; /* Fixed height for the container */
+  overflow-y: scroll;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  direction: rtl; /* Place the scrollbar on the left */
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb-color) #ccc;
+}
+
+.scrollable-container > * {
+  direction: ltr; /* Reset direction for content */
+}
+
+.scrollable-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+  border-radius: 100%;
+}
+
+.sub-section {
+  height: 400px; /* Each section's height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.sub-section.visible {
+  opacity: 1;
+}
+
+.sub-section.hidden {
+  opacity: 0;
+}
+
+
+
+
+
+
+  

@@ -1,0 +1,14 @@
+.scrollable-container {
+    /* Existing styles */
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb-color) transparent;
+  }
+  
+  .scrollable-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: 10px;
+  }

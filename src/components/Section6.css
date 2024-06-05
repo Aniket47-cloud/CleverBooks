@@ -1,0 +1,19 @@
+@keyframes gradient-slide {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Apply the animation to the background */
+  .gradient-background {
+     /* Full viewport height */
+     height:75vh;
+    background-size: 200% 200%; /* Make background larger to allow for animation */
+    animation: gradient-slide 5s ease infinite; /* Apply animation */
+  }
